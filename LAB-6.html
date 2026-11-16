@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            color: brown;
+        }
+
+        form {
+            display: block;
+            text-align: left;
+            background: #faf4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+        
+        .terms {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body align="center">
+    <h1>Blood Donation Form</h1>
+    <form action="/submit" method="post">
+        <label for="name">Full Name : </label>
+        <input type="text" id="name" name="name" placeholder="Enter Name"><br>
+
+        <label for="age">Age : </label>
+        <input type="number" id="age" name="age" placeholder="Enter Age"><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label>Gender : </label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div><br>
+
+        <label for="phone">Phone Number</label>
+        <input type="number" id="phone" name="phone number" placeholder="9876543210"><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" cols="30"></textarea><br>
+
+        <div class="blood">
+            <label for="bloodgroup">Blood Group:</label>
+            <select id="bloodgroup" name="bloodgroup" required>
+                <option value="">--Select--</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+        </div>
+
+        <div class="terms">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I hereby accept Terms & Conditions of registering as blood donor.</label>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
