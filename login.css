@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(160deg,#6b9ed8,#a5cae9);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.container{
+    padding: 20px;
+    border: black 2px solid;
+    border-radius: 9px;
+    background-color: #a5cae9;
+}
+
+h1{
+    text-align: center;
+}
+
+label{
+    display:block;
+    margin-top:14px;
+    margin-bottom:6px;
+    color:#34495e;
+    font-weight:600;
+}
+
+button{
+    display: block;
+    width: 100%;
+}
+
+button:hover{
+    background-color: aqua;
+    color: white;
+    transition: 0.5s;
+}
