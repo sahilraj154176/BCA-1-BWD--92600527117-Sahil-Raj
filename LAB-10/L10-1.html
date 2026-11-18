@@ -1,0 +1,73 @@
+<!-- 1. Create HTML page to display the use of Z-index. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 0;
+        }
+
+        .box{
+            position: absolute;
+            width: 500px;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+        .c1 {
+            background-color: rgb(215, 145, 145);
+            top: 50px;
+            left: 50px;
+            z-index: 1; 
+        }
+
+        .c2 {
+            background-color: aquamarine;
+            top: 100px;
+            left: 100px;
+            z-index: 2; 
+        }
+
+        .c3 {
+            background-color: bisque;
+            top: 150px;
+            left: 150px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-Index</h1>
+
+    <div class="container">
+        <div class="box">
+            <div class="box c1">1</div>
+            <div class="box c2">2</div>
+            <div class="box c3">3</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- 2. Create HTML page to create Image slider with text with the help of z-index. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+
+    <style>
+        body{
+            background-color: rgb(44, 42, 42);
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .image-slider {
+            position: relative;
+            width: 500px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slide{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #000;
+            color: aliceblue;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 2; 
+        }
+
+        .text h3 {
+            margin: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Slider</h1>
+
+    <div class="image-slider">
+
+        <div class="slide">
+            <img src="im1.jpg">
+            <div class="text">
+                <h3>Valley</h3>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="im2.jpg">
+            <div class="text">
+                <h3>Sunflowers</h3>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="im3.jpg">
+            <div class="text">
+                <h3>Lake</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

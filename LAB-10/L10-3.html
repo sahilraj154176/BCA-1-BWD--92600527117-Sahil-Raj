@@ -1,0 +1,49 @@
+<!-- 3. Create HTML page to display different menu links as horizontal. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu Links</title>
+
+        <style>
+            *{
+                background-color: antiquewhite;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            nav{
+                background-color: rgb(52, 52, 176);
+                padding: 10px;
+            }
+
+            .menu {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            
+            .menu li {
+                margin-left: 20px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Menu Links Horizontally</h1>
+        <p>Using Flexbox Style CSS</p>
+
+    </body>
+</html>
