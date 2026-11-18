@@ -1,0 +1,83 @@
+<!-- Definition : Create Login Page with Logout option and Registration option ( if user click on Login Page then login detail will ask and if user click on registration page then it's display ask and option the registration page  and option of forgot password can also be working in  that ) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(160deg, #6b9ed8, #a5cae9);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+
+      .container {
+        padding: 20px;
+        border: black 2px solid;
+        border-radius: 9px;
+        box-shadow: 0 10px 30px black;
+        background-color: #a5cae9;
+      }
+
+      input {
+        width: 90%;
+        padding: 10px;
+        margin: 7px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: lightgreen;
+        border: none;
+        border-radius: 5px;
+      }
+
+      button {
+        display: block;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: aqua;
+        color: white;
+        transition: 0.5s;
+      }
+
+      a {
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Registration Page</h2>
+
+      <form action="logged_in.html">
+        <input type="text" placeholder="Full Name" /><br />
+
+        <input type="email" placeholder="Email" /><br />
+
+        <input type="text" placeholder="Username" /><br />
+
+        <input type="password" placeholder="Password" /><br />
+
+        <input type="password" placeholder="Confirm Password" /><br />
+
+        <button type="submit">Register</button>
+      </form>
+
+      <a href="index.html">Back to Home</a>
+    </div>
+  </body>
+</html>
