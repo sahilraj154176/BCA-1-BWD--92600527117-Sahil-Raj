@@ -1,0 +1,90 @@
+<!-- Perform the all the mouse event of javascript with alert box. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 10px;
+        }
+
+        .box {
+            background-color: beige;
+            padding: 30px;
+            margin: 20px auto;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Mouse Events</h1>
+
+    <button onclick="alert('Mouse Click Event')">
+        Click
+    </button>
+
+    <button ondblclick="alert('Double Click Event')">
+        Double Click
+    </button>
+
+    <div class="box"
+         onmousedown="alert('Mouse Down Event')">
+        Mouse Down
+    </div>
+
+    <div class="box"
+         onmouseup="alert('Mouse Up Event')">
+        Mouse Up
+    </div>
+
+    <div class="box"
+         onmouseover="alert('Mouse Over Event')">
+        Mouse Over
+    </div>
+
+    <div class="box"
+         onmouseout="alert('Mouse Out Event')">
+        Mouse Out
+    </div>
+
+    <div class="box"
+         onmousemove="alert('Mouse Move Event')">
+        Mouse Move
+    </div>
+
+    <div class="box"
+         onmouseenter="alert('Mouse Enter Event')">
+        Mouse Enter
+    </div>
+
+    <div class="box"
+         onmouseleave="alert('Mouse Leave Event')">
+        Mouse Leave
+    </div>
+
+    <div class="box"
+         oncontextmenu="alert('Right Click Event'); return false;">
+        Right Click Here
+    </div>
+
+</body>
+</html>

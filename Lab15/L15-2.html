@@ -1,0 +1,86 @@
+<!-- 2.  Create one 3x3 HTML table which display different color name in each cell and when you mouse over on that cell so it change the bgcolor of that cell as per the color is mentioned in that cell. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Table</title>
+
+    <style>
+        table {
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td {
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        td:nth-child(1):hover {
+            background-color: red;
+        }
+
+        td:nth-child(2):hover {
+            background-color: blue;
+        }
+
+        td:nth-child(3):hover {
+            background-color: green;
+        }
+
+        tr:nth-child(2) td:nth-child(1):hover {
+            background-color: yellow;
+        }
+
+        tr:nth-child(2) td:nth-child(2):hover {
+            background-color: orange;
+        }
+
+        tr:nth-child(2) td:nth-child(3):hover {
+            background-color: pink;
+        }
+
+        tr:nth-child(3) td:nth-child(1):hover {
+            background-color: purple;
+        }
+
+        tr:nth-child(3) td:nth-child(2):hover {
+            background-color: cyan;
+        }
+
+        tr:nth-child(3) td:nth-child(3):hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 align="center">MOUSE HOVER COLORS</h2>
+
+    <table>
+        <tr>
+            <td>Red</td>
+            <td>Blue</td>
+            <td>Green</td>
+        </tr>
+
+        <tr>
+            <td>Yellow</td>
+            <td>Orange</td>
+            <td>Pink</td>
+        </tr>
+
+        <tr>
+            <td>Purple</td>
+            <td>Cyan</td>
+            <td>Brown</td>
+        </tr>
+    </table>
+
+</body>
+</html>

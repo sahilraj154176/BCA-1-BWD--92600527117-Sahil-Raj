@@ -1,0 +1,26 @@
+<!-- 1. Create a HTML page in which, if you mouse over on image so image opacity will be decreased and if you mouse out so, it gains the original opacity back. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Opacity Effect</title>
+    <style>
+        .image-container {
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="im1.jpg" alt="Your Image">
+    </div>
+
+</body>
+</html>
